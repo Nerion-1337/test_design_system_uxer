@@ -47,6 +47,7 @@ function App() {
           color="destructive"
           children={<PiGearSix />}
           disabled={false}
+          ariaLabel="Settings"
         />
       </ButtonGroup>
       <Button
@@ -55,6 +56,7 @@ function App() {
         color="secondary"
         children={<PiTrashLight />}
         disabled={false}
+        ariaLabel="Delete"
       />
     </section>
   );

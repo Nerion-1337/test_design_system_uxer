@@ -2,6 +2,10 @@
 Projet est une intégration de composants d'interface (UI) basée sur un Design System. L'objectif est de fournir des composants réutilisables, hautement paramétrables et fidèles aux maquettes <sub>![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)</sub> (Pixel Perfect).
 
 <br>
+
+**Conformité Accessibilité** : Ce Design System intègre les standards **WCAG 2.1**. Chaque composant interactif dispose d'un *Accessible Name*, d'une gestion du focus visible et de labels textuels masqués pour les synthèses vocales.
+
+<br>
 <br>
 
 # 🚀 Installation et Lancement
@@ -54,7 +58,7 @@ Une fois le build terminé, l'application est accessible sur : ```http://localho
 
 # 🏗 Présentation des Composants
 1. `App`: Contient l'ensemble des boutons de démonstration.
-
+<br><br>
 2. `Button`: Le composant bouton est l'atome central. Il gère de nombreux états et variantes visuelles.
 
 | Prop | Type | Description |
@@ -66,7 +70,8 @@ Une fois le build terminé, l'application est accessible sur : ```http://localho
 | `badge` | `number` | Affiche un compteur numérique à l'intérieur du bouton. |
 | `children` | `ReactNode` | Affiche le contenu. |
 | `disabled` | `boolean` | Désactive les interactions et applique une opacité. |
-
+| `ariaLabel` | `string` | Label textuel pour les boutons icônes. | **Obligatoire** si pas de texte visible. |
+<br>
 3. `ButtonGroup`: Permet de grouper plusieurs boutons pour créer des actions liées.
 
 | Prop | Type | Description |
