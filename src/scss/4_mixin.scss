@@ -1,0 +1,31 @@
+///////////////////////////////////////
+// TYPOGRAPHY
+///////////////////////////////////////
+
+@mixin typo_body_m_medium {
+  font-family: $family_body;
+  font-size: $size_14;
+  line-height: $line_20;
+  font-weight: $weight_500;
+}
+
+@mixin typo_body_s_medium {
+  font-family: $family_body;
+  font-size: $size_13;
+  line-height: $line_18;
+  font-weight: $weight_500;
+}
+
+@mixin typo_body_xs_semibold {
+  font-family: $family_body;
+  font-size: $size_12;
+  line-height: $line_16;
+  font-weight: $weight_600;
+}
+
+@mixin typo_body_xxs_semibold {
+  font-family: $family_body;
+  font-size: $size_10;
+  line-height: $line_14;
+  font-weight: $weight_600;
+}

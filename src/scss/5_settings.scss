@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body{
+  position: relative;
+  @extend %fullwindow;
+  @extend %center;
+  background-color: $White;
+}
+
+section{
+  @extend %center;
+  gap: 20px;
+  padding: 20px;
+}

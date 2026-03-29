@@ -1,0 +1,14 @@
+name: front_end_react
+
+services:
+  uxer_test_alternance:
+    container_name: uxer_test_alternance
+    build:
+      context: .
+      dockerfile: dockerfile.dev
+    restart: always
+    ports:
+      - "5173:5173" 
+    volumes:
+      - .:/app                     
+      - /app/node_modules          

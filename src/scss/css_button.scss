@@ -1,0 +1,286 @@
+///////////////////////////////////////
+// VARIANT
+///////////////////////////////////////
+
+.btn_standard {
+  position: relative;
+  @extend %center;
+  cursor: pointer;
+  transition: 0.5s;
+
+.btn_badge{
+position: relative;
+}
+}
+
+.btn_icon{
+  position: relative;
+  width: 40px;
+  @extend %center;
+  cursor: pointer;
+  transition: 0.5s;
+  
+  svg{
+  position: absolute;
+}
+}
+
+///////////////////////////////////////
+// ICON
+///////////////////////////////////////
+
+.btn_icon_left,
+.btn_icon_right{
+  position: relative;
+  @extend %center;
+}
+
+///////////////////////////////////////
+/// BADGE
+/////////////////////////////////////// 
+ 
+.btn_badge{
+  position: relative;
+  @extend %center;
+} 
+
+///////////////////////////////////////
+/// COLOR
+///////////////////////////////////////
+
+.btn_primary {
+  background-color: $Fairway_600;
+  color: $White;
+  border: solid 1px $Black_30;
+  @extend %shadow;
+
+  &:hover {
+    background-color: $Fairway_700;
+  }
+  &:focus {
+    outline: none; 
+    box-shadow: 0 0 0 3px $Black_12;
+    }
+  &:disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+  path {
+    fill: $White;
+    }
+
+    .btn_badge{
+      background-color: $White_20;
+      color: $White;
+    }
+}
+
+.btn_secondary {
+  background-color: $White ;
+  color: $Black;
+  border: solid 1px $Grey_300;
+  @extend %shadow;
+
+  &:hover {
+    background-color: $Grey_100;
+  }
+  &:focus {
+    outline: none; 
+    box-shadow: 0 0 0 3px $Black_12;
+    }
+  &:disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+  path {
+    fill: $Grey_500;
+    }
+
+    .btn_badge{
+      background-color: $Black_10;
+      color: $Black;
+    }
+}
+
+.btn_ghost {
+  background-color: $White;
+  color: $Black;
+  border: none;
+
+  &:hover {
+    background-color: $Grey_100;
+  }
+  &:focus {
+    outline: none; 
+    box-shadow: 0 0 0 3px $Black_12;
+    background-color: $Black_05;
+    }
+  &:disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+  path {
+    fill: $Grey_500;
+    }
+
+    .btn_badge{
+      background-color: $Black_10;
+      color: $Black;
+    }
+}
+
+.btn_destructive {
+  background-color: $Red_600;
+  color: $White;
+  border: solid 1px $Black_30;
+  @extend %shadow;
+
+  &:hover {
+    background-color: $Red_700;
+  }
+  &:focus {
+    outline: none; 
+    box-shadow: 0 0 0 3px $Black_12;
+    }
+  &:disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+  path {
+    fill: $White;
+    }
+
+    .btn_badge{
+      background-color: $Black_20;
+      color: $White;
+    }
+}
+
+.btn_alpha_dark {
+  background-color: $Black_20;
+  color: $White;
+  border: none;
+  @extend %shadow;  
+
+
+  &:hover {
+    background-color: $Black_30;
+  }
+  &:focus {
+    outline: none; 
+    box-shadow: 0 0 0 3px $Black_12;
+    }
+  &:disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+  path {
+    fill: $White;
+    }
+
+    .btn_badge{
+      background-color: $Black_10;
+      color: $Black;
+    }
+}
+
+.btn_alpha_light {
+  background-color: $White_20;
+  color: $White;
+  border: none;
+  @extend %shadow;
+
+  &:hover {
+    background-color: $White_30;
+  }
+  &:focus {
+    background-color: $White_20;
+    outline: none; 
+    box-shadow: 0 0 0 3px $Black_12;
+    }
+  &:disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+  path {
+    fill: $White;
+    }
+
+    .btn_badge{
+      background-color: $Black_10;
+      color: $Black;
+    }
+}
+
+///////////////////////////////////////
+/// SIZE
+///////////////////////////////////////
+
+.btn_M {
+  @include typo_body_m_medium;
+  height: 40px;
+  padding: 8px 12px;
+  gap: 8px;
+  border-radius: 8px;
+
+  svg{
+      width: 20px;
+      height: 20px;
+  } 
+
+  .btn_badge{
+    @include typo_body_xs_semibold;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 4px;
+    border-radius: 4px;
+  }
+}
+
+.btn_S {
+  @include typo_body_m_medium;
+  height: 36px;
+  padding: 8px 12px;
+  gap: 8px;
+  border-radius: 8px;
+
+  svg{
+      width: 20px;
+      height: 20px;
+  } 
+
+  .btn_badge{
+    @include typo_body_xs_semibold;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 4px;
+    border-radius: 4px;
+  }
+}
+
+.btn_XS {
+  @include typo_body_s_medium;
+  height: 34px;
+  padding: 8px 8px;
+  gap: 4px;
+  border-radius: 8px;
+
+  svg{
+      width: 16px;
+      height: 16px;
+  }
+
+  .btn_badge{
+    @include typo_body_xxs_semibold;
+    min-width: 17px;
+    height: 16px;
+    padding: 0 3px;
+    border-radius: 4px;
+  }
+}

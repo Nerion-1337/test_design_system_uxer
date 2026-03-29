@@ -1,0 +1,70 @@
+///////////////////////////////////////
+// VARIANT
+///////////////////////////////////////
+
+.btnGp {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  transition: 0.5s;
+  overflow: hidden;
+
+  & > button {
+    position: relative;
+    border-radius: 0;
+
+    &:not(:first-child) {
+      border-left: none;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none; 
+    }
+
+    &:hover:not(:disabled) {
+      z-index: 1; 
+    }
+  }
+}
+
+///////////////////////////////////////
+/// COLOR
+///////////////////////////////////////
+
+.btnGp_primary{
+
+  &:focus-within {
+    outline: none;
+    box-shadow: 0 0 0 3px $Black_12; 
+  }
+}
+
+///////////////////////////////////////
+/// SIZE
+///////////////////////////////////////
+
+.btnGp_M {
+  border-radius: 9px;
+
+& > button {
+    &:first-child {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+}
+}
+
+///////////////////////////////////////
+// DISABLED
+///////////////////////////////////////
+
+.btnGp.is_disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
