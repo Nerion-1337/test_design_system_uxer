@@ -40,3 +40,35 @@ $spacing_0: 0;
 
 $weight_500: 500;
 $weight_600: 600;
+
+
+///////////////////////////////////////
+// GROUP STYLE BOUTON
+///////////////////////////////////////
+
+$typo_btn: (
+"body_m_medium": (
+  "font-family": $family_body,
+  "font-size": $size_14,
+  "line-height": $line_20,
+  "font-weight": $weight_500
+),
+"body_s_medium": (
+  "font-family": $family_body,
+  "font-size": $size_13,
+  "line-height": $line_18,
+  "font-weight": $weight_500
+),
+"body_xs_semibold": (
+  "font-family": $family_body,
+  "font-size": $size_12,
+  "line-height": $line_16,
+  "font-weight": $weight_600
+),
+"body_xxs_semibold": (
+  "font-family": $family_body,
+  "font-size": $size_10,
+  "line-height": $line_14,
+  "font-weight": $weight_600
+  ),
+);

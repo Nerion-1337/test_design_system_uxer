@@ -34,3 +34,15 @@
     background-color: $Black_05;
   }
 }
+
+///////////////////////////////////////
+// TYPOGRAPHY
+///////////////////////////////////////
+
+@each $variant, $style in $typo_btn {
+  %typo_#{$variant} {
+    @each $prop, $value in $style {
+      #{$prop}: $value;
+    }
+  }
+}
